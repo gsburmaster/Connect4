@@ -239,11 +239,11 @@ function WinCheck(x,y){
     if (movenumber == 42 && isWin == false)
     {
     boardLock = true;
-   var bruh = new Promise ((resolve,reject) => {
+   var ExitC = new Promise ((resolve,reject) => {
         setTimeout( () => {resolve()},1000)
         
    }) 
-   bruh.then(() => {NoWin()})
+   ExitC.then(() => {NoWin()})
     }
     if (isWin == true)
     {
@@ -251,20 +251,20 @@ function WinCheck(x,y){
 
         if (model.board[y][x] == "R")    {
             boardLock = true;
-           var bruh = new Promise ((resolve,reject) => {
-                setTimeout( () => {resolve()},1000)
+           var ExitC = new Promise ((resolve,reject) => {
+                setTimeout( () => {resolve()},2000)
                 
            }) 
-           bruh.then(() => {RedWin()})
+           ExitC.then(() => {RedWin()})
             }
         else 
         {
                 boardLock = true;
-               var bruh = new Promise ((resolve,reject) => {
-                    setTimeout( () => {resolve()},1000)
+               var ExitC = new Promise ((resolve,reject) => {
+                    setTimeout( () => {resolve()},2000)
                     
                }) 
-               bruh.then(() => {BlackWin()})
+               ExitC.then(() => {BlackWin()})
         }
         
 
