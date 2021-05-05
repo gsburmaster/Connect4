@@ -240,7 +240,7 @@ function WinCheck(x,y){
     {
     boardLock = true;
    var bruh = new Promise ((resolve,reject) => {
-        setTimeout( () => {resolve()},500)
+        setTimeout( () => {resolve()},1000)
         
    }) 
    bruh.then(() => {NoWin()})
@@ -252,7 +252,7 @@ function WinCheck(x,y){
         if (model.board[y][x] == "R")    {
             boardLock = true;
            var bruh = new Promise ((resolve,reject) => {
-                setTimeout( () => {resolve()},500)
+                setTimeout( () => {resolve()},1000)
                 
            }) 
            bruh.then(() => {RedWin()})
@@ -261,7 +261,7 @@ function WinCheck(x,y){
         {
                 boardLock = true;
                var bruh = new Promise ((resolve,reject) => {
-                    setTimeout( () => {resolve()},500)
+                    setTimeout( () => {resolve()},1000)
                     
                }) 
                bruh.then(() => {BlackWin()})
